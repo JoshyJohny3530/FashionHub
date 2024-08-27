@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Welcome to <span style="color:wheat;">Fashion HUB!</span></h1>
+        <p class="lead">Find the best collection of clothing at Fashion Hub.</p>
+    </div>
+</div>
+<br />
+<br />
+<div class="container">
+   
+    <h2>OUR TOP SELLING CATEGORIES</h2>
+    <br /><br />
+    <div class="row">
+        <div class="col-md-4">
+           
+            <a href="@Url.Action("Index", "Product", new { categoryId = 6 })">
+                <img src="~/images/womendressbanner.jpg" class="img-fluid" alt="DRESS" />
+                <h3>DRESS</h3>
+            </a>
+        </div>
+        <div class="col-md-4">
+          
+            <a href="@Url.Action("Index", "Product", new { categoryId = 5 })">
+                <img src="~/images/mensbottoms.jpg" class="img-fluid" alt="BOTTOMS" />
+                <h3>BOTTOMS</h3>
+            </a>
+        </div>
+        <div class="col-md-4">
+          
+            <a href="@Url.Action("Index", "Product", new { categoryId = 4 })">
+                <img src="~/images/tops.jpg" class="img-fluid" alt="TOPS" />
+                <h3>TOPS</h3>
+            </a>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h2>About Our Store</h2>
+            <p>FashionHUB brings you the latest trends and styles at affordable prices. Our collection is curated with care, ensuring the best quality and variety for our customers.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="~/images/banner.jpg" class="img-fluid" alt="About Image" />
+        </div>
+    </div>
+</div>
